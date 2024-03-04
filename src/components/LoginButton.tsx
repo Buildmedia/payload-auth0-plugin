@@ -1,8 +1,8 @@
 import React from "react";
 import { LoginButtonProps } from "./types";
 
-const LoginButton = () => {
-  return (props?: LoginButtonProps) => {
+const LoginButton = (props?: LoginButtonProps): React.FC => {
+  return () => {
     const {
       text = "Log In with SSO",
       href = process.env.REACT_APP_AUTH0_LOGIN_URL || "/auth0/login",

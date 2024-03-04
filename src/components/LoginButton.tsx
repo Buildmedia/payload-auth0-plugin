@@ -1,7 +1,7 @@
 import React from "react";
 import { LoginButtonProps } from "./types";
 
-const LoginButton = (props?: LoginButtonProps) => {
+const LoginButton = (props?: LoginButtonProps): React.FC => {
   return () => {
     const {
       text = "Log In with SSO",
